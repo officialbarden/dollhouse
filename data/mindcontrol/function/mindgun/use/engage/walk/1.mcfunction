@@ -1,0 +1,3 @@
+execute as @n[tag=mindgun.victim,limit=1] at @s run summon zombified_piglin ~ ~ ~ {Tags:['pathfinder.temp'],Silent:1b,active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:-1,show_particles:0b,show_icon:0b}]}
+data modify entity @n[type=zombified_piglin,tag=pathfinder.temp,limit=1] AngryAt set from entity @n[type=villager,tag=pathfind.temp,limit=1] UUID
+tag @n[tag=mindgun.victim] add mindgun.walking

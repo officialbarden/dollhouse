@@ -1,0 +1,28 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": {"floatgun":true,"being_used":true}
+              }
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "floatgun.click": {
+            "min": 1,
+            "max": 99
+          }
+        }
+      }
+    ]
+  }
